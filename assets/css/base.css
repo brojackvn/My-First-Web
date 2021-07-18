@@ -1,0 +1,48 @@
+/* Cấu hình chung */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color: rgb(238,75,43);
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* Thường thì mặc định: font-size 16px => 62.5/100 * 16 = 10px*/
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Cái này dùng để responsive */
+.grid {
+    /* Khi mà khung tình trình duyệt > 1400 thì thằng sử dụng class này chỉ hiển thị 1400 thôi. 
+    Khi mà nhỏ hơn 1200 thì (max-width có tác dung) width là full width trình duyệt */
+    width: 1400px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    /* Trường hợp này không muốn dử dụng .grid */
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+
