@@ -129,6 +129,27 @@
     }
 }
 
+.header__notify::before {
+    content: "";
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -27px;
+    right: 5px;
+}
+
+.header__notify::after {
+    content: "";
+    display: block;
+    width: 405px;
+    height: 15px;
+    position: absolute;
+    top:-15px;
+    right: 0px;
+    background-color: transparent;
+
+} 
 .header__navbar-item--has-notify:hover .header__notify {
     display: block;
 }
